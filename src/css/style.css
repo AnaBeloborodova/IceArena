@@ -74,7 +74,6 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */ }
 
@@ -304,17 +303,21 @@ template {
 [hidden] {
   display: none; }
 
-.link-wrap {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-  .link-wrap div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 100px;
-    width: 20%;
-    border: 2px solid #4682B4;
-    background-color: #f2f2f2;
-    padding: 10px;
-    margin: 10px 10px 10px 10px; }
+body {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.header {
+  color: #0082C8; }
+  .header__search {
+    padding-top: 6px;
+    padding-left: 10px;
+    border: 1px solid #0082C8; }
+  .header__text-tel {
+    margin-left: 15px;
+    font-size: 24px;
+    font-weight: 600; }
+  .header__text-bottom {
+    margin-left: 15px;
+    margin-top: -20px;
+    font-weight: 400;
+    font-size: 14px; }
