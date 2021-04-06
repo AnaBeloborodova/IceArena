@@ -409,11 +409,59 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 18px;
-  padding-bottom: 18px;
   list-style-type: none;
   padding-left: 0; }
+
+.list__item {
+  padding: 18px 9px; }
+  .list__item:hover {
+    background-color: #005481; }
 
 .list__item a {
   color: #FFFFFF;
   text-decoration: none; }
+
+.title {
+  position: relative; }
+  .title__background-ice {
+    width: 100%;
+    height: 794px;
+    background: url("../img/bg-ice.png") center no-repeat;
+    background-position-y: top; }
+  .title__slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow-x: hidden;
+    z-index: -1; }
+
+.navigation button {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  outline: none;
+  border: none; }
+  .navigation button:hover rect {
+    fill: #005481; }
+
+.navigation__right {
+  right: 15%; }
+
+.navigation__left {
+  left: 15%; }
+
+.pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 43px; }
+  .pagination__circle {
+    margin-right: 16px;
+    width: 19px;
+    height: 19px;
+    background: rgba(255, 255, 255, 0.8);
+    outline: none;
+    border: none;
+    border-radius: 50%; }
+    .pagination__circle--active {
+      background-color: rgba(0, 130, 200, 0.8); }
