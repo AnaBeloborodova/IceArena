@@ -317,6 +317,56 @@ body {
   width: 100%;
   height: 100%; }
 
+.footer {
+  background-color: #0082C8;
+  padding-top: 38px;
+  padding-bottom: 45px;
+  color: #FFFFFF; }
+  .footer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .footer a {
+    color: #FFFFFF;
+    cursor: default; }
+  .footer .group:nth-of-type(1) {
+    margin-top: 11px; }
+  .footer__phone {
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 24px; }
+    .footer__phone span {
+      font-size: 12px; }
+  .footer__place {
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 24px; }
+  .footer ul li {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400; }
+  .footer__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end; }
+    .footer__social .group {
+      margin-top: 40px; }
+  .footer__vk {
+    padding-left: 9px; }
+  .footer__galaxy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400; }
+    .footer__galaxy a {
+      padding-left: 4px;
+      text-decoration: none; }
+  .footer__studio {
+    text-decoration: underline; }
+
 .header {
   padding-top: 22px; }
   .header__nav {
@@ -580,7 +630,8 @@ body {
   .item h3 {
     font-size: 18px;
     font-weight: 600;
-    line-height: 23px; }
+    line-height: 23px;
+    color: #0082C8; }
     .item h3:hover {
       color: #005481;
       cursor: default; }
@@ -603,6 +654,9 @@ body {
     font-weight: 600;
     line-height: 22px;
     color: #333333; }
+    .announcement__group h3:hover {
+      color: #005481;
+      cursor: default; }
   .announcement__group div {
     margin-top: 18px;
     margin-bottom: 18px;
@@ -625,3 +679,50 @@ body {
   background: #FFFFFF;
   border: 1px solid #C4C4C4;
   border-radius: 35px; }
+  .announcement button:hover {
+    background: #005481;
+    color: #FFFFFF;
+    cursor: default; }
+
+.partners {
+  padding-top: 22px; }
+  .partners h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px; }
+  .partners__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 36px;
+    margin-bottom: 50px;
+    width: 100%; }
+    .partners__group button {
+      outline: none;
+      border: none;
+      cursor: default;
+      background-color: transparent; }
+      .partners__group button:hover {
+        cursor: default; }
+      .partners__group button:hover rect {
+        fill: #005481;
+        cursor: default; }
+
+.links__row {
+  margin-top: 45px; }
+  .links__row a {
+    text-decoration: none;
+    color: #0082C8;
+    font-size: 18px;
+    line-height: 24px; }
+    .links__row a img {
+      display: block;
+      margin: 0 auto; }
+    .links__row a span {
+      display: block;
+      margin: 0 auto;
+      margin-top: 11px;
+      text-align: center; }
+      .links__row a span:hover {
+        color: #005481;
+        cursor: default; }
