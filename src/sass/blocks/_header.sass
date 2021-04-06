@@ -37,6 +37,7 @@
       &:hover
         color: black
         border: 1px solid $hover
+        cursor: default
 
     & button
       position: absolute
@@ -62,8 +63,11 @@
     display: flex
     justify-content: space-between
     align-items: center
+    &:hover
+      cursor: default
 
     & svg:hover
+      cursor: default
       & g
         fill: $hover
 
@@ -101,6 +105,7 @@
 
     &:hover
       background-color: $hover
+      cursor: default
 
 .menu
   &__list
@@ -118,9 +123,12 @@
     padding: 18px 9px
     &:hover
       background-color: $hover
+      cursor: default
   &__item a
     color: $light
     text-decoration: none
+    &:hover
+      cursor: default
 
 
 

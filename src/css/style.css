@@ -351,7 +351,8 @@ body {
     line-height: 17, 6px; }
     .nav__search input:hover {
       color: black;
-      border: 1px solid #005481; }
+      border: 1px solid #005481;
+      cursor: default; }
   .nav__search button {
     position: absolute;
     right: 20px;
@@ -376,12 +377,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .nav__social svg:hover g {
-    fill: #005481; }
-    .nav__social svg:hover g path {
+  .nav__social:hover {
+    cursor: default; }
+  .nav__social svg:hover {
+    cursor: default; }
+    .nav__social svg:hover g {
       fill: #005481; }
-  .nav__social svg:hover path {
-    fill: #005481; }
+      .nav__social svg:hover g path {
+        fill: #005481; }
+    .nav__social svg:hover path {
+      fill: #005481; }
 
 .contact__group {
   line-height: normal; }
@@ -402,7 +407,8 @@ body {
   background-color: #0082C8;
   border: none; }
   .social__buy:hover {
-    background-color: #005481; }
+    background-color: #005481;
+    cursor: default; }
 
 .menu__list {
   display: flex;
@@ -415,11 +421,14 @@ body {
 .list__item {
   padding: 18px 9px; }
   .list__item:hover {
-    background-color: #005481; }
+    background-color: #005481;
+    cursor: default; }
 
 .list__item a {
   color: #FFFFFF;
   text-decoration: none; }
+  .list__item a:hover {
+    cursor: default; }
 
 .title {
   position: relative; }
@@ -442,8 +451,11 @@ body {
   background-color: transparent;
   outline: none;
   border: none; }
+  .navigation button:hover {
+    cursor: default; }
   .navigation button:hover rect {
-    fill: #005481; }
+    fill: #005481;
+    cursor: default; }
 
 .navigation__right {
   right: 15%; }
@@ -493,10 +505,12 @@ body {
     outline: none;
     border: none;
     background-color: transparent; }
-    .group__item button:hover path {
-      fill: #005481; }
-    .group__item button:hover span {
-      color: #FFFFFF; }
+    .group__item button:hover {
+      cursor: default; }
+      .group__item button:hover path {
+        fill: #005481; }
+      .group__item button:hover span {
+        color: #FFFFFF; }
     .group__item button span {
       position: absolute;
       top: 15px;
@@ -508,3 +522,106 @@ body {
     font-size: 14px;
     font-weight: 400;
     color: darkgrey; }
+
+.news {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  .news h2 {
+    font-size: 48px;
+    line-height: 62px; }
+  .news__page {
+    margin-top: 48px; }
+  .news__all {
+    margin-top: 29px;
+    padding: 8px 33px;
+    color: #0082C8;
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #0082C8;
+    border-radius: 35px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px; }
+    .news__all:hover {
+      background: #005481;
+      color: #FFFFFF;
+      cursor: default; }
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #C4C4C4;
+  color: #C4C4C4; }
+
+.page__item {
+  margin-top: 47px;
+  text-decoration: none; }
+  .page__item svg:hover path {
+    fill: #005481; }
+
+.item {
+  position: relative; }
+  .item__time {
+    position: absolute;
+    top: 5px;
+    left: 28px;
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 37px; }
+  .item__month {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #818181; }
+  .item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px; }
+    .item h3:hover {
+      color: #005481;
+      cursor: default; }
+  .item p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 400;
+    line-height: 17px; }
+
+.announcement img {
+  margin-top: 47px; }
+
+.announcement__group {
+  margin-top: 16px;
+  padding-left: 22px; }
+  .announcement__group h3 {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #333333; }
+  .announcement__group div {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    background-color: #E5E5E5; }
+  .announcement__group span {
+    font-size: 14px;
+    line-height: 18px;
+    color: #0082C8; }
+  .announcement__group p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400; }
+
+.announcement button {
+  margin-top: 29px;
+  padding: 8px 35px;
+  color: #818181;
+  font-size: 16px;
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  border-radius: 35px; }
