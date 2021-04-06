@@ -303,21 +303,117 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  box-sizing: border-box; }
+
 body {
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 600; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1256px;
+  width: 100%;
+  height: 100%; }
 
 .header {
-  color: #0082C8; }
-  .header__search {
+  padding-top: 22px; }
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #0082C8; }
+  .header__logotype {
+    width: 100%;
+    height: 170px;
+    background: url("../img/background-image.png"); }
+    .header__logotype img {
+      display: block;
+      margin: 0 auto;
+      padding-top: 30px;
+      margin-top: 14px; }
+  .header__menu {
+    background-color: #0082C8; }
+
+.nav__search {
+  position: relative; }
+  .nav__search input {
     padding-top: 6px;
     padding-left: 10px;
-    border: 1px solid #0082C8; }
-  .header__text-tel {
-    margin-left: 15px;
-    font-size: 24px;
-    font-weight: 600; }
-  .header__text-bottom {
-    margin-left: 15px;
-    margin-top: -20px;
+    padding-bottom: 6px;
+    width: 100%;
+    border: 1px solid #0082C8;
+    border-radius: 35px;
+    outline: none;
     font-weight: 400;
+    font-size: 14px;
+    line-height: 17, 6px; }
+    .nav__search input:hover {
+      color: black;
+      border: 1px solid #005481; }
+  .nav__search button {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    width: 19px;
+    height: 19px;
+    background: url("../img/icons/search-icon.svg") center no-repeat;
+    border: none;
+    outline: none; }
+
+.nav__contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.nav__place {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.nav__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .nav__social svg:hover g {
+    fill: #005481; }
+    .nav__social svg:hover g path {
+      fill: #005481; }
+  .nav__social svg:hover path {
+    fill: #005481; }
+
+.contact__group {
+  line-height: normal; }
+  .contact__group p {
+    margin-bottom: 0; }
+  .contact__group p:nth-child(1) {
+    font-size: 24px; }
+  .contact__group p:nth-child(2) {
     font-size: 14px; }
+    .contact__group p:nth-child(2) span {
+      color: darkgrey; }
+
+.social__buy {
+  padding: 15px 25px;
+  color: #FFFFFF;
+  outline: none;
+  border-radius: 35px;
+  background-color: #0082C8;
+  border: none; }
+  .social__buy:hover {
+    background-color: #005481; }
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  list-style-type: none;
+  padding-left: 0; }
+
+.list__item a {
+  color: #FFFFFF;
+  text-decoration: none; }

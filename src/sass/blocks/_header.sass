@@ -1,15 +1,124 @@
 .header
-  color: $primary
+  padding-top: 22px
+
+  &__nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    color: $primary
+  &__logotype
+    width: 100%
+    height: 170px
+    background: url("../img/background-image.png")
+    & img
+      display: block
+      margin: 0 auto
+      padding-top: 30px
+      margin-top: 14px
+  &__menu
+    background-color: $primary
+
+.nav
   &__search
-    padding-top: 6px
-    padding-left: 10px
-    border: 1px solid $primary
-  &__text-tel
-    margin-left: 15px
-    font-size: 24px
-    font-weight: 600
-  &__text-bottom
-    margin-left: 15px
-    margin-top: -20px
-    font-weight: 400
-    font-size: 14px
+    position: relative
+
+    & input
+      padding-top: 6px
+      padding-left: 10px
+      padding-bottom: 6px
+      width: 100%
+      border: 1px solid $primary
+      border-radius: 35px
+      outline: none
+      font-weight: 400
+      font-size: 14px
+      line-height: 17, 6px
+
+      &:hover
+        color: black
+        border: 1px solid $hover
+
+    & button
+      position: absolute
+      right: 20px
+      top: 5px
+      width: 19px
+      height: 19px
+      background: url("../img/icons/search-icon.svg") center no-repeat
+      border: none
+      outline: none
+
+  &__contact
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+  &__place
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+  &__social
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    & svg:hover
+      & g
+        fill: $hover
+
+        & path
+          fill: $hover
+
+      & path
+        fill: $hover
+
+
+.contact
+  &__group
+    line-height: normal
+
+    & p
+      margin-bottom: 0
+
+    & p:nth-child(1)
+      font-size: 24px
+
+    & p:nth-child(2)
+      font-size: 14px
+
+      & span
+        color: darkgrey
+
+.social
+  &__buy
+    padding: 15px 25px
+    color: $light
+    outline: none
+    border-radius: 35px
+    background-color: $primary
+    border: none
+
+    &:hover
+      background-color: $hover
+
+.menu
+  &__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    padding-top: 18px
+    padding-bottom: 18px
+    list-style-type: none
+    padding-left: 0
+
+
+.list
+  &__item a
+
+    color: $light
+    text-decoration: none
+
+
+

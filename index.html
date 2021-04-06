@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Айсберг - спортивная школа</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
@@ -14,62 +13,58 @@
 </head>
 
 <body>
-<div class="container">
-    <header class="header">
-        <div class="row mt-3">
-            <div class="col-md-3">
-                <div class="input-group">
-                    <input type="text" class="search header__search form-control rounded-pill"
-                           placeholder="Поиск по сайту"
-                           aria-label="Поиск по сайту" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-secondary border-0 position-absolute end-0 rounded-circle" type="button">
-                            <img src="./dist/img/icons/search-icon.svg" alt="search">
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="row mx-auto">
-                    <div class="col-1 mx-auto">
-                        <img class="tel header__tel" src="./dist/img/icons/phone-icon.png" alt="tel"></div>
-                    <div class="col-11">
-                        <p class="text-tel header__text-tel">+7 (4912) 50-50-16</p>
-                        <p class="text-bottom header__text-bottom">(доб. 1003) - <span class="text-secondary">Администратор</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-1">
-                        <img src="./dist/img/icons/home-icon.svg" alt="home">
-                    </div>
-                    <div class="col-11">
-                        <p class="fs-5 ">Рязань, ул. Шевченко, 51</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="./dist/img/icons/instagram.svg" alt="inst">
-                        <img src="./dist/img/icons/vk.svg" alt="vk">
-                    </div>
-                    <div class="col-6">
-                        <button class="btn btn-primary rounded-pill pt-2 pb-2">Купить билет</button>
 
-                    </div>
-                    <div class="col-2">
-                        <img src="./dist/img/icons/year.svg" alt="year">
-                    </div>
-                </div>
+<header class="header">
+    <div class="nav header__nav row container">
+        <div class="col-md-3 search nav__search">
+            <button type="button"></button>
+            <input type="text" placeholder="Поиск по сайту">
+        </div>
+        <div class="col-md-3 contact nav__contact">
+            <img src="./dist/img/icons/phone-icon.png" alt="tel">
+            <div class="group contact__group">
+                <p>+7 (4912) 50-50-16</p>
+                <p>(доб. 1003) - <span>Администратор</span></p>
             </div>
-
 
         </div>
-    </header>
+        <div class="col-md-3 place nav__place">
+            <img src="./dist/img/icons/home-icon.svg" alt="home">
+            <span>Рязань, ул. Шевченко, 51</span>
+        </div>
+        <div class="col-md-3 social nav__social">
+            <a href="#"><svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)" fill="#0082C8"><path d="M24.976 7.35c-.059-1.328-.274-2.241-.581-3.033A6.102 6.102 0 0022.948 2.1 6.153 6.153 0 0020.736.66C19.94.351 19.032.136 17.704.077 16.365.015 15.94 0 12.546 0 9.152 0 8.727.015 7.394.073 6.066.132 5.152.347 4.361.654A6.1 6.1 0 002.144 2.1a6.155 6.155 0 00-1.44 2.212C.395 5.108.18 6.017.121 7.345.06 8.683.044 9.108.044 12.502c0 3.395.015 3.82.073 5.153.059 1.328.274 2.241.581 3.033.318.84.811 1.592 1.446 2.217a6.153 6.153 0 002.212 1.44c.796.308 1.705.523 3.033.582 1.333.058 1.758.073 5.153.073 3.394 0 3.819-.015 5.152-.073 1.328-.059 2.242-.274 3.033-.581a6.395 6.395 0 003.658-3.658c.307-.796.522-1.705.58-3.033.06-1.334.074-1.758.074-5.153 0-3.394-.005-3.819-.064-5.152zm-2.252 10.207c-.053 1.221-.259 1.88-.43 2.32a4.147 4.147 0 01-2.373 2.373c-.44.171-1.104.377-2.32.43-1.319.059-1.714.073-5.05.073-3.335 0-3.736-.014-5.05-.073-1.22-.053-1.88-.259-2.32-.43a3.846 3.846 0 01-1.435-.932 3.886 3.886 0 01-.933-1.436c-.17-.44-.376-1.104-.43-2.32-.058-1.319-.073-1.714-.073-5.05 0-3.335.015-3.736.073-5.05.054-1.22.26-1.88.43-2.32a3.8 3.8 0 01.938-1.435 3.88 3.88 0 011.436-.933c.44-.17 1.103-.376 2.32-.43 1.318-.058 1.714-.073 5.05-.073 3.34 0 3.735.015 5.049.073 1.221.054 1.88.26 2.32.43.542.2 1.035.518 1.436.933.415.405.732.893.932 1.436.171.44.377 1.103.43 2.32.059 1.318.073 1.714.073 5.05 0 3.335-.014 3.725-.073 5.044z"/><path d="M12.546 6.08a6.424 6.424 0 00-6.422 6.422 6.424 6.424 0 006.422 6.423 6.424 6.424 0 006.422-6.423 6.424 6.424 0 00-6.422-6.422zm0 10.588a4.167 4.167 0 11.002-8.333 4.167 4.167 0 01-.002 8.333zM20.722 5.826a1.5 1.5 0 11-2.999 0 1.5 1.5 0 012.999 0z"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h25v25H0z"/></clipPath></defs></svg>
+            </a>
+            <a href="#">
+                <svg width="31" height="31" viewBox="0 0 31 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.687 20.188c4.485 0 2.886-2.84 3.232-3.656-.005-.61-.01-1.196.01-1.553.285.08.955.42 2.34 1.766 2.137 2.157 2.684 3.442 4.41 3.442h3.18c1.007 0 1.531-.417 1.793-.767.254-.338.502-.932.23-1.857-.709-2.227-4.845-6.072-5.102-6.478.04-.075.101-.174.133-.226h-.002c.816-1.078 3.932-5.747 4.39-7.614a.024.024 0 00.003-.01c.248-.853.02-1.406-.215-1.719-.354-.467-.917-.704-1.677-.704h-3.18c-1.064 0-1.87.537-2.28 1.514-.682 1.738-2.602 5.31-4.04 6.575a82.903 82.903 0 01.008-4.176c.047-1.983.197-3.912-1.861-3.912h-4.996c-1.29 0-2.523 1.407-1.187 3.079 1.168 1.465.42 2.28.671 6.344-.981-1.052-2.728-3.895-3.962-7.529-.346-.983-.87-1.893-2.347-1.893h-3.18C.77.814 0 1.516 0 2.694c0 2.642 5.85 17.494 15.687 17.494zM5.237 2.75c.281 0 .31 0 .517.59 1.265 3.724 4.101 9.235 6.173 9.235 1.557 0 1.557-1.596 1.557-2.196l-.002-4.782c-.085-1.582-.66-2.37-1.04-2.848l4.532.005c.002.022-.026 5.29.013 6.566 0 1.812 1.439 2.85 3.685.577 2.37-2.675 4.01-6.674 4.075-6.837.097-.232.18-.311.486-.311h3.191c0 .004 0 .008-.002.012-.29 1.356-3.16 5.678-4.12 7.02-.015.02-.029.042-.043.064-.423.69-.766 1.452.058 2.524h.001c.075.09.27.303.554.597.884.912 3.914 4.03 4.183 5.27-.178.029-.372.008-3.375.014-.64 0-1.14-.956-3.047-2.88-1.716-1.669-2.83-2.351-3.843-2.351-1.969 0-1.825 1.598-1.807 3.53.006 2.095-.007 1.433.008 1.564-.115.046-.445.136-1.304.136C7.492 18.25 2.155 5.242 1.95 2.755c.071-.006 1.049-.002 3.289-.004z" fill="#0082C8"/></svg>
+            </a>
+            <button class="buy social__buy">Купить билет</button>
+            <a href="#"><svg width="30" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29.776 7.414C29.508 7.115 23.066.09 14.999.09S.492 7.115.224 7.414a.879.879 0 000 1.172c.267.299 6.708 7.324 14.775 7.324 8.068 0 14.509-7.025 14.777-7.324a.879.879 0 000-1.172zm-14.777 6.738A6.16 6.16 0 018.848 8 6.16 6.16 0 0115 1.848 6.16 6.16 0 0121.152 8a6.16 6.16 0 01-6.153 6.152z" fill="#0082C8"/><path d="M15.879 6.242c0-.884.439-1.662 1.107-2.14A4.338 4.338 0 0015 3.605 4.4 4.4 0 0010.605 8 4.4 4.4 0 0015 12.395c2.17 0 3.965-1.585 4.32-3.654-1.77.57-3.441-.769-3.441-2.499z" fill="#0082C8"/></svg>
 
-</div>
+
+            </a>
+        </div>
+    </div>
+    <div class="logotype header__logotype">
+        <a href="#"><img src="./dist/img/logotype.png" alt="logotype"></a>
+
+    </div>
+    <div class="menu header__menu">
+        <ul class="list menu__list container">
+            <li class="item list__item"><a href="#">Об организации</a></li>
+            <li class="item list__item"><a href="#">Спортивная подготовка</a></li>
+            <li class="item list__item"><a href="#">Дополнительные услуги</a></li>
+            <li class="item list__item"><a href="#">Расписание</a></li>
+            <li class="item list__item"><a href="#">Новости</a></li>
+            <li class="item list__item"><a href="#">Анонсы</a></li>
+            <li class="item list__item"><a href="#">Для рекламодателей</a></li>
+            <li class="item list__item"><a href="#">Контакты</a></li>
+        </ul>
+    </div>
+</header>
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
         integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
