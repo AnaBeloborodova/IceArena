@@ -7,6 +7,10 @@
 
 .navigation
   & button
+    max-width: 42px
+    max-height: 72px
+    width: auto
+    height: auto
     position: absolute
     top: 50%
     background-color: transparent
@@ -14,6 +18,8 @@
     border: none
     &:hover
       cursor: default
+    @media (max-width: $tablet)
+      transform: scale(0.5)
 
     &:hover rect
       fill: $hover
@@ -29,7 +35,8 @@
   bottom: 43px
   @media (max-width: $tablet)
     bottom: 10px
-    left: 40%
+    left: 35%
+    transform: scale(0.5)
   @media (max-width: $mobile)
     left: 35%
   &__circle

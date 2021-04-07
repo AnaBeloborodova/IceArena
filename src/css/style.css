@@ -318,7 +318,7 @@ body {
 a {
   cursor: default; }
 
-.container {
+.wrapper {
   margin: 0 auto;
   max-width: 1320px;
   width: 100%;
@@ -468,6 +468,9 @@ a {
     margin-bottom: 0; }
   .contact__group p:nth-child(1) {
     font-size: 24px; }
+    @media (max-width: 1024px) {
+      .contact__group p:nth-child(1) {
+        font-size: 20px; } }
   .contact__group p:nth-child(2) {
     font-size: 14px; }
     .contact__group p:nth-child(2) span {
@@ -503,6 +506,10 @@ a {
   .list__item:hover {
     background-color: #005481;
     cursor: default; }
+  @media (max-width: 768px) {
+    .list__item {
+      padding: 10px 5px;
+      font-size: 14px; } }
 
 .list__item a {
   color: #FFFFFF;
@@ -518,6 +525,10 @@ a {
       width: 100%; }
 
 .navigation button {
+  max-width: 42px;
+  max-height: 72px;
+  width: auto;
+  height: auto;
   position: absolute;
   top: 50%;
   background-color: transparent;
@@ -525,6 +536,9 @@ a {
   border: none; }
   .navigation button:hover {
     cursor: default; }
+  @media (max-width: 768px) {
+    .navigation button {
+      transform: scale(0.5); } }
   .navigation button:hover rect {
     fill: #005481;
     cursor: default; }
@@ -542,7 +556,8 @@ a {
   @media (max-width: 768px) {
     .pagination {
       bottom: 10px;
-      left: 40%; } }
+      left: 35%;
+      transform: scale(0.5); } }
   @media (max-width: 480px) {
     .pagination {
       left: 35%; } }
@@ -566,8 +581,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 80px;
-    padding-bottom: 80px; }
+    padding: 80px 40px; }
 
 .group__item {
   display: flex;
@@ -576,19 +590,28 @@ a {
   align-items: center;
   padding: 45px 12px;
   max-width: 269px;
-  width: 100%;
   max-height: 272px;
   background-color: #FFFFFF;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
   @media (max-width: 1320px) {
     .group__item {
-      margin-bottom: 20px; } }
+      margin-bottom: 20px;
+      margin-right: -20px; } }
+  @media (max-width: 1024px) {
+    .group__item {
+      padding: 10px;
+      max-width: none; } }
   .group__item img {
-    width: 65px;
-    height: 70px; }
+    max-width: 65px;
+    max-height: 70px; }
+    @media (max-width: 1024px) {
+      .group__item img {
+        max-width: none; } }
   .group__item button {
     position: relative;
     max-width: 229px;
+    width: auto;
+    height: auto;
     max-height: 70px;
     outline: none;
     border: none;
@@ -599,6 +622,9 @@ a {
         fill: #005481; }
       .group__item button:hover span {
         color: #FFFFFF; }
+    @media (max-width: 1024px) {
+      .group__item button {
+        max-width: none; } }
     .group__item button span {
       position: absolute;
       top: 15px;
