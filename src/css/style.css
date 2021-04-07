@@ -320,6 +320,8 @@ a {
 
 .wrapper {
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 1320px;
   width: 100%;
   height: 100%; }
@@ -329,10 +331,16 @@ a {
   padding-top: 38px;
   padding-bottom: 45px;
   color: #FFFFFF; }
+  @media (max-width: 480px) {
+    .footer {
+      padding-top: 15px; } }
   .footer__row {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media (max-width: 768px) {
+      .footer__row {
+        align-items: flex-start; } }
   .footer a {
     color: #FFFFFF;
     cursor: default; }
@@ -341,6 +349,11 @@ a {
     max-height: 117px;
     height: auto;
     width: auto; }
+    .footer__logo img {
+      width: 100%; }
+      @media (max-width: 480px) {
+        .footer__logo img {
+          width: 50%; } }
   .footer .group:nth-of-type(1) {
     margin-top: 11px; }
   .footer__phone {
@@ -353,6 +366,10 @@ a {
     margin-left: 8px;
     font-size: 16px;
     line-height: 24px; }
+  @media (max-width: 480px) {
+    .footer__list {
+      margin-top: 20px;
+      padding-left: 0; } }
   .footer ul li {
     font-size: 14px;
     line-height: 25px;
@@ -366,6 +383,12 @@ a {
     align-items: flex-end; }
     .footer__social .group {
       margin-top: 40px; }
+      @media (max-width: 480px) {
+        .footer__social .group {
+          margin-top: 0; } }
+    @media (max-width: 768px) {
+      .footer__social {
+        flex-direction: row; } }
   .footer__vk {
     padding-left: 9px; }
   .footer__galaxy {
@@ -375,6 +398,9 @@ a {
     font-size: 12px;
     line-height: 16px;
     font-weight: 400; }
+    @media (max-width: 480px) {
+      .footer__galaxy {
+        align-items: flex-end; } }
     .footer__galaxy a {
       padding-left: 4px;
       text-decoration: none; }
@@ -581,7 +607,12 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 80px 40px; }
+    padding-top: 80px;
+    padding-bottom: 80px; }
+    @media (max-width: 768px) {
+      .info__group {
+        padding-bottom: 40px;
+        padding-top: 40px; } }
 
 .group__item {
   display: flex;
@@ -640,6 +671,9 @@ a {
 .news {
   margin-top: 80px;
   margin-bottom: 80px; }
+  @media (max-width: 768px) {
+    .news {
+      margin-top: 20px; } }
   .news h2 {
     font-size: 48px;
     line-height: 62px; }
@@ -713,17 +747,28 @@ a {
     max-height: 81px;
     width: auto;
     height: auto; }
+    @media (max-width: 480px) {
+      .item img {
+        margin-top: 10px; } }
+
+@media (max-width: 1199.98px) {
+  .announcement {
+    margin-top: 30px; } }
 
 .announcement img {
   margin-top: 47px;
-  max-width: 284px;
+  max-width: 275px;
   max-height: 169px;
   width: auto;
   height: auto; }
 
 .announcement__group {
-  margin-top: 16px;
+  margin-top: 15px;
   padding-left: 22px; }
+  @media (max-width: 480px) {
+    .announcement__group {
+      padding-left: 0;
+      margin-top: 0; } }
   .announcement__group h3 {
     margin-top: 16px;
     font-size: 18px;
@@ -733,35 +778,79 @@ a {
     .announcement__group h3:hover {
       color: #005481;
       cursor: default; }
+    @media (max-width: 1199.98px) {
+      .announcement__group h3 {
+        margin-top: 28px; } }
+    @media (max-width: 768px) {
+      .announcement__group h3 {
+        font-size: 14px;
+        line-height: normal; } }
+    @media (max-width: 480px) {
+      .announcement__group h3 {
+        margin-top: 5px; } }
   .announcement__group div {
-    margin-top: 18px;
+    margin-top: 15px;
     margin-bottom: 18px;
     background-color: #E5E5E5; }
+    @media (max-width: 768px) {
+      .announcement__group div {
+        margin-top: 0;
+        margin-bottom: 0; } }
   .announcement__group span {
     font-size: 14px;
-    line-height: 18px;
     color: #0082C8; }
+    @media (max-width: 480px) {
+      .announcement__group span {
+        line-height: normal; } }
   .announcement__group p {
     margin-top: 10px;
     font-size: 14px;
     line-height: 17px;
     font-weight: 400; }
+    @media (max-width: 480px) {
+      .announcement__group p {
+        margin-top: 0; } }
+  .announcement__group button {
+    margin-top: 20px;
+    margin-left: -22px;
+    padding: 8px 35px;
+    color: #818181;
+    font-size: 16px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 35px; }
+    .announcement__group button:hover {
+      background: #005481;
+      color: #FFFFFF;
+      cursor: default; }
+    @media (max-width: 1199.98px) {
+      .announcement__group button {
+        margin-left: 0;
+        margin-top: 5px; } }
+    @media (max-width: 768px) {
+      .announcement__group button {
+        margin-top: 18px; } }
+    @media (max-width: 480px) {
+      .announcement__group button {
+        margin-top: 0; } }
 
-.announcement button {
-  margin-top: 29px;
-  padding: 8px 35px;
-  color: #818181;
-  font-size: 16px;
-  background: #FFFFFF;
-  border: 1px solid #C4C4C4;
-  border-radius: 35px; }
-  .announcement button:hover {
-    background: #005481;
-    color: #FFFFFF;
-    cursor: default; }
+.wrap__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  @media (max-width: 1199.98px) {
+    .wrap__group {
+      flex-direction: row; } }
+  @media (max-width: 480px) {
+    .wrap__group {
+      flex-direction: column; } }
 
 .partners {
   padding-top: 22px; }
+  @media (max-width: 768px) {
+    .partners {
+      padding-top: 0; } }
   .partners h4 {
     font-weight: 600;
     font-size: 24px;
@@ -774,6 +863,9 @@ a {
     margin-top: 36px;
     margin-bottom: 50px;
     width: 100%; }
+    @media (max-width: 768px) {
+      .partners__group {
+        margin-top: 0; } }
     .partners__group button {
       outline: none;
       border: none;
@@ -787,14 +879,27 @@ a {
 
 .links__row {
   margin-top: 50px; }
+  @media (max-width: 768px) {
+    .links__row {
+      margin-top: 20px;
+      margin-bottom: 20px; } }
   .links__row a {
     text-decoration: none;
     color: #0082C8;
     font-size: 18px;
     line-height: 24px; }
+    @media (max-width: 480px) {
+      .links__row a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start; } }
     .links__row a img {
       display: block;
       margin: 0 auto; }
+      @media (max-width: 480px) {
+        .links__row a img {
+          margin-left: 0;
+          margin-right: 0; } }
     .links__row a span {
       display: block;
       margin: 0 auto;
@@ -803,3 +908,6 @@ a {
       .links__row a span:hover {
         color: #005481;
         cursor: default; }
+      @media (max-width: 480px) {
+        .links__row a span {
+          margin-left: 10px; } }

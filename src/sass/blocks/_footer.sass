@@ -3,20 +3,31 @@
   padding-top: 38px
   padding-bottom: 45px
   color: $light
+  @media (max-width: $mobile)
+    padding-top: 15px
   &__row
     display: flex
     justify-content: space-between
     align-items: center
+    @media (max-width: $tablet)
+      align-items: flex-start
+
   & a
     color: $light
     cursor: default
+
   &__logo
     max-width: 394px
     max-height: 117px
     height: auto
     width: auto
+    & img
+      width: 100%
+      @media (max-width: $mobile)
+        width: 50%
   & .group:nth-of-type(1)
     margin-top: 11px
+
   &__phone
     margin-left: 8px
     font-size: 16px
@@ -27,7 +38,10 @@
     margin-left: 8px
     font-size: 16px
     line-height: 24px
-
+  &__list
+    @media (max-width: $mobile)
+      margin-top: 20px
+      padding-left: 0
 
   & ul li
     font-size: 14px
@@ -42,6 +56,10 @@
     align-items: flex-end
     & .group
       margin-top: 40px
+      @media (max-width: $mobile)
+        margin-top: 0
+    @media (max-width: $tablet)
+      flex-direction: row
   &__vk
     padding-left: 9px
   &__galaxy
@@ -51,6 +69,8 @@
     font-size: 12px
     line-height: 16px
     font-weight: 400
+    @media (max-width: $mobile)
+      align-items: flex-end
     & a
       padding-left: 4px
       text-decoration: none

@@ -1,5 +1,7 @@
 .partners
   padding-top: 22px
+  @media (max-width: $tablet)
+    padding-top: 0
   & h4
     font-weight: 600
     font-size: 24px
@@ -13,6 +15,8 @@
     margin-bottom: 50px
 
     width: 100%
+    @media (max-width: $tablet)
+      margin-top: 0
     & button
       outline: none
       border: none
@@ -26,15 +30,26 @@
 .links
   &__row
     margin-top: 50px
+    @media (max-width: $tablet)
+      margin-top: 20px
+      margin-bottom: 20px
+
     & a
       text-decoration: none
       color: $primary
       font-size: 18px
       line-height: 24px
+      @media (max-width: $mobile)
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
 
       & img
         display: block
         margin: 0 auto
+        @media (max-width: $mobile)
+          margin-left: 0
+          margin-right: 0
       & span
         display: block
         margin: 0 auto
@@ -43,3 +58,7 @@
         &:hover
           color: $hover
           cursor: default
+        @media (max-width: $mobile)
+          margin-left: 10px
+
+

@@ -1,6 +1,8 @@
 .news
   margin-top: 80px
   margin-bottom: 80px
+  @media (max-width: $tablet)
+    margin-top: 20px
   & h2
     font-size: 48px
     line-height: 62px
@@ -75,17 +77,25 @@
     max-height: 81px
     width: auto
     height: auto
+    @media (max-width: $mobile)
+      margin-top: 10px
 
 .announcement
+  @media (max-width: 1199.98px)
+    margin-top: 30px
   & img
     margin-top: 47px
-    max-width: 284px
+    max-width: 275px
     max-height: 169px
     width: auto
     height: auto
   &__group
-    margin-top: 16px
+    margin-top: 15px
     padding-left: 22px
+    @media (max-width: $mobile)
+      padding-left: 0
+      margin-top: 0
+
     & h3
       margin-top: 16px
       font-size: 18px
@@ -95,30 +105,63 @@
       &:hover
         color: $hover
         cursor: default
+      @media (max-width: 1199.98px)
+        margin-top: 28px
+      @media (max-width: $tablet)
+        font-size: 14px
+        line-height: normal
+      @media (max-width: $mobile)
+        margin-top: 5px
+
     & div
-      margin-top: 18px
+      margin-top: 15px
       margin-bottom: 18px
       background-color: #E5E5E5
+      @media (max-width: $tablet)
+        margin-top: 0
+        margin-bottom: 0
     & span
-
       font-size: 14px
-      line-height: 18px
       color: $primary
+      @media (max-width: $mobile)
+        line-height: normal
+
     & p
       margin-top: 10px
       font-size: 14px
       line-height: 17px
       font-weight: 400
-  & button
-    margin-top: 29px
-    padding: 8px 35px
-    color: #818181
-    font-size: 16px
-    background: $light
-    border: 1px solid #C4C4C4
-    border-radius: 35px
-    &:hover
-      background: $hover
-      color: $light
-      cursor: default
+      @media (max-width: $mobile)
+        margin-top: 0
 
+    & button
+      margin-top: 20px
+      margin-left: -22px
+      padding: 8px 35px
+      color: #818181
+      font-size: 16px
+      background: $light
+      border: 1px solid #C4C4C4
+      border-radius: 35px
+      &:hover
+        background: $hover
+        color: $light
+        cursor: default
+      @media (max-width: 1199.98px)
+        margin-left: 0
+        margin-top: 5px
+      @media (max-width: $tablet)
+        margin-top: 18px
+      @media (max-width: $mobile)
+        margin-top: 0
+
+.wrap
+  &__group
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    @media (max-width: 1199.98px)
+      flex-direction: row
+    @media (max-width: $mobile)
+      flex-direction: column
