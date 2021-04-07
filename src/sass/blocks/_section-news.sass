@@ -57,6 +57,8 @@
     font-weight: 600
     line-height: 23px
     color: $primary
+    @media (max-width: $desktop)
+      font-size: 15px
 
     &:hover
       color: $hover
@@ -68,10 +70,19 @@
     color: #333333
     font-weight: 400
     line-height: 17px
+  & img
+    max-width: 118px
+    max-height: 81px
+    width: auto
+    height: auto
 
 .announcement
   & img
     margin-top: 47px
+    max-width: 284px
+    max-height: 169px
+    width: auto
+    height: auto
   &__group
     margin-top: 16px
     padding-left: 22px

@@ -1,18 +1,9 @@
 .title
   position: relative
-  &__background-ice
+  &__slide
     width: 100%
-    height: 794px
-    background: url("../img/bg-ice.png") center no-repeat
-    background-position-y: top
-
-  &__slider
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    overflow-x: hidden
-    z-index: -1
+    & img
+      width: 100%
 
 .navigation
   & button
@@ -27,16 +18,20 @@
     &:hover rect
       fill: $hover
       cursor: default
-
-
   &__right
     right: 15%
   &__left
     left: 15%
+
 .pagination
   position: absolute
-  left: 50%
+  left: 45%
   bottom: 43px
+  @media (max-width: $tablet)
+    bottom: 10px
+    left: 40%
+  @media (max-width: $mobile)
+    left: 35%
   &__circle
     margin-right: 16px
     width: 19px
