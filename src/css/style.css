@@ -529,6 +529,9 @@ a {
   .social__buy:hover {
     background-color: #005481;
     cursor: default; }
+  @media (max-width: 768px) {
+    .social__buy {
+      padding: 10px 20px; } }
 
 .menu__list {
   display: flex;
@@ -558,7 +561,8 @@ a {
     cursor: default; }
 
 .title {
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
   .title__slide {
     width: 100%; }
     .title__slide img {
@@ -870,14 +874,9 @@ a {
     font-size: 24px;
     line-height: 24px; }
   .partners__group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 36px;
-    margin-bottom: 50px;
-    width: 100%; }
-    @media (max-width: 768px) {
+    margin-bottom: 50px; }
+    @media (max-width: 1024px) {
       .partners__group {
         margin-top: 0; } }
     .partners__group button {
@@ -890,6 +889,16 @@ a {
       .partners__group button:hover rect {
         fill: #005481;
         cursor: default; }
+    .partners__group img {
+      margin-right: 25px;
+      width: auto; }
+      @media (max-width: 1320px) {
+        .partners__group img {
+          margin-right: 10px; } }
+      @media (max-width: 1024px) {
+        .partners__group img {
+          margin-right: 0;
+          transform: scale(0.8); } }
 
 .links__row {
   margin-top: 50px; }

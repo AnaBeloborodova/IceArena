@@ -7,16 +7,12 @@
     font-size: 24px
     line-height: 24px
   &__group
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
-    align-items: center
     margin-top: 36px
     margin-bottom: 50px
 
-    width: 100%
-    @media (max-width: $tablet)
+    @media (max-width: $desktop)
       margin-top: 0
+
     & button
       outline: none
       border: none
@@ -27,6 +23,16 @@
       &:hover rect
         fill: $hover
         cursor: default
+    & img
+      margin-right: 25px
+      width: auto
+      @media (max-width: $desktop-full)
+        margin-right: 10px
+      @media (max-width: $desktop)
+        margin-right: 0
+        transform: scale(0.8)
+
+
 .links
   &__row
     margin-top: 50px
